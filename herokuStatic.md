@@ -1,6 +1,6 @@
 ## Deploy a static website with Heroku
 
-Heroku makes deployment easy by not letting you worry too much about what's going on on the server. With a couple of commands you can put your project online. Heroku enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites".
+Heroku makes deployment easy by not letting you worry too much about what's going on on the server. With a couple of commands you can put your project online. Heroku enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites". (In case you do want deploy a NodeJs project, you've to use another 'buildpack')
 
 Heroku depends on git. First you've to commit your project on your machine as you would do normally. Afterwards you let Heroku create a domain and a seperate Heroku git repository using a couple of commands we'll demonstrate. Finally you push your code to the Heroku repository and Heroku takes it from there!
 
@@ -30,12 +30,12 @@ Now the Heroku magic can begin
 heroku login
 heroku create nameOfApp -buildpack https://github.com/heroku/heroku-buildpack-static.git
 ```
-Heroku should output two links. The first one is your domain where your app is hosted. The second one is the Heroku git repository where you have to push your code to. This is the final step.
+Heroku should output two links. The first one is your domain where your app is going to be hosted. The second one is the Heroku git repository where you have to push your code to. Pushing the code is the final step.
 
 ### Final step
 
 ```
-git push theHerokuGitRepositoryFromStep2 master
+git push theHerokuGitRepositoryFromStep3 master
 ```
 Now you can visit the domain of Step 3. In case you lost the link, you can look it up on the Heroku platform.
 
