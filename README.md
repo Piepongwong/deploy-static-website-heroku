@@ -1,6 +1,6 @@
 ## Deploy a static website with Heroku
 
-Heroku makes deployment easy by not letting you worry too much about what's going on on the server. With a couple of commands you can put your project online. It enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites". (In case you do want deploy a NodeJs project, you've to use another 'buildpack')
+Heroku makes deployment easy by not letting you worry too much about what's going on on the server. With a couple of commands you can put your project online. It enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites". <sub>(In case you do want deploy a NodeJs project, you've to use another 'buildpack')<sub>
 
 Heroku depends on git. First you've to commit your project on your machine as you would do normally. Afterwards you let Heroku create a domain and a seperate online Heroku git repository using a couple of commands we'll demonstrate. Finally you push your code to the Heroku repository and Heroku takes it from there!
 
