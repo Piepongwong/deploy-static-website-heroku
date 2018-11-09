@@ -1,6 +1,6 @@
 ## Deploy a static website with Heroku
 
-Heroku makes deployment easy by not letting you worry too much about what's going on on the server. With a couple of commands you can put your project online. It enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites". <sub>(In case you do want deploy a NodeJs project, you've to use another 'buildpack')<sub>
+Heroku makes deployment easy by not letting you worry too much about what's happening on the server. You can put your project online with a couple of commands. It enables you to deploy all kinds of projects, for example with NodeJs, React and MongoDB. The websites we made so far do not include these technologies. They consist out of plain HTML, CSS and javascript instead. Another term for such websites is "static websites". <sub>(In case you do want deploy a NodeJs project, you've to use another 'buildpack')<sub>
 
 Heroku depends on git. First you've to commit your project on your machine as you would do normally. Afterwards you let Heroku create a domain and a seperate online Heroku git repository using a couple of commands we'll demonstrate. Finally you push your code to the Heroku repository and Heroku takes it from there!
 
@@ -25,10 +25,10 @@ Create your local git repository and commit your project. This shouldn't look un
  git commit -m "very nice, I like"
 ```
 ### Step 3
-Now the Heroku magic can begin
+Now the Heroku magic can begin:
 ```
 heroku login
-heroku create nameOfApp -buildpack https://github.com/heroku/heroku-buildpack-static.git
+heroku create nameOfApp --buildpack https://github.com/heroku/heroku-buildpack-static.git
 ```
 Heroku should output two links. The first one is your domain where your app is going to be hosted. The second one is the Heroku git repository where you have to push your code to. This is the final step.
 
