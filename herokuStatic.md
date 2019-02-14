@@ -28,7 +28,7 @@ First of all, create your local git repository and commit your project. This sho
 Now the Heroku magic can begin
 ```
 heroku login
-heroku create nameOfApp -buildpack https://github.com/heroku/heroku-buildpack-static.git
+heroku create nameOfApp --buildpack https://github.com/heroku/heroku-buildpack-static.git
 ```
 Heroku should output two links. The first one is your domain where your app is going to be hosted. The second one is the Heroku git repository where you have to push your code to. Pushing the code is the final step.
 
